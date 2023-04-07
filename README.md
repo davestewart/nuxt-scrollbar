@@ -95,14 +95,14 @@ npm run release
 ```
 
 <!-- Badges -->
-[npm-version-src]: https://img.shields.io/npm/v/nuxt-scrollbar/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-version-href]: https://npmjs.com/package/nuxt-scrollbar
+[npm-version-src]: https://img.shields.io/npm/v/@davestewart/nuxt-scrollbar/latest.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-version-href]: https://npmjs.com/package/@davestewart/nuxt-scrollbar
 
-[npm-downloads-src]: https://img.shields.io/npm/dm/nuxt-scrollbar.svg?style=flat&colorA=18181B&colorB=28CF8D
-[npm-downloads-href]: https://npmjs.com/package/nuxt-scrollbar
+[npm-downloads-src]: https://img.shields.io/npm/dm/@davestewart/nuxt-scrollbar.svg?style=flat&colorA=18181B&colorB=28CF8D
+[npm-downloads-href]: https://npmjs.com/package/@davestewart/nuxt-scrollbar
 
-[license-src]: https://img.shields.io/npm/l/nuxt-scrollbar.svg?style=flat&colorA=18181B&colorB=28CF8D
-[license-href]: https://npmjs.com/package/nuxt-scrollbar
+[license-src]: https://img.shields.io/npm/l/@davestewart/nuxt-scrollbar.svg?style=flat&colorA=18181B&colorB=28CF8D
+[license-href]: https://npmjs.com/package/@davestewart/nuxt-scrollbar
 
 [nuxt-src]: https://img.shields.io/badge/Nuxt-18181B?logo=nuxt.js
 [nuxt-href]: https://nuxt.com
