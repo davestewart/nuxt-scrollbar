@@ -2,10 +2,9 @@
 <template>
   <div class="container is-max-desktop px-5 py-5">
     <div class="content">
-      <h1>Nuxt Scrollbar Demo</h1>
-
       <NuxtScrollbar class="box" @ps-scroll-y="onScroll">
         <div class="p-4">
+          <h1>Nuxt Scrollbar Demo</h1>
           <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis
             egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit
             amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque
@@ -48,9 +47,15 @@ function onScroll (event) {
 </script>
 
 <style>
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
 .box {
-  overflow-y: hidden;
   height: 400px;
+  overflow-y: hidden;
 }
 
 ul {

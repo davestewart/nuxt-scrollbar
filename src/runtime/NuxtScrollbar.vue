@@ -24,20 +24,6 @@
 <script>
 import { defineNuxtComponent } from 'nuxt/app'
 
-const events = [
-  'scroll',
-  'ps-scroll-y',
-  'ps-scroll-x',
-  'ps-scroll-up',
-  'ps-scroll-down',
-  'ps-scroll-left',
-  'ps-scroll-right',
-  'ps-y-reach-start',
-  'ps-y-reach-end',
-  'ps-x-reach-start',
-  'ps-x-reach-end'
-]
-
 export default defineNuxtComponent({
   props: {
     options: {
@@ -61,6 +47,19 @@ export default defineNuxtComponent({
 
   computed: {
     handlers () {
+      const events = [
+        'scroll',
+        'ps-scroll-y',
+        'ps-scroll-x',
+        'ps-scroll-up',
+        'ps-scroll-down',
+        'ps-scroll-left',
+        'ps-scroll-right',
+        'ps-y-reach-start',
+        'ps-y-reach-end',
+        'ps-x-reach-start',
+        'ps-x-reach-end'
+      ]
       return events.reduce((handlers, key) => {
         handlers[key] = (...args) => this.$emit(key, ...args)
         return handlers
@@ -69,7 +68,3 @@ export default defineNuxtComponent({
   },
 })
 </script>
-
-<style scoped>
-
-</style>

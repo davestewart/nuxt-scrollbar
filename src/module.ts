@@ -1,9 +1,9 @@
 import { defineNuxtModule, createResolver, addComponent, addPlugin } from '@nuxt/kit'
 import { Nuxt } from '@nuxt/schema'
 
-export interface ModuleOptions {}
-
 const { resolve } = createResolver(import.meta.url)
+
+export interface ModuleOptions {}
 
 export default defineNuxtModule<ModuleOptions>({
   meta: {
@@ -12,8 +12,8 @@ export default defineNuxtModule<ModuleOptions>({
   },
 
   async setup (options, nuxt: Nuxt) {
-    addPlugin(resolve('./runtime/plugin'))
     nuxt.options.css.push('vue3-perfect-scrollbar/dist/vue3-perfect-scrollbar.css')
+    addPlugin(resolve('./runtime/plugin'))
     addComponent({
       name: 'NuxtScrollbar',
       filePath: resolve('./runtime/NuxtScrollbar.vue'),
