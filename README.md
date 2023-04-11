@@ -11,11 +11,13 @@
 
 This is Nuxt 3 wrapper of [Vue 3 Perfect Scrollbar](https://www.npmjs.com/package/vue3-perfect-scrollbar) (which in turn wraps [Perfect Scrollbar](https://www.npmjs.com/package/perfect-scrollbar)).
 
-> **A note about wrapped / alternate packages**
-> 
-> Unfortunately, the [wrapped](https://github.com/mercs600/vue3-perfect-scrollbar/issues) [packages](https://github.com/mdbootstrap/perfect-scrollbar/issues) seem to have gone a bit stale, so I figured it was easier to wrap the library for Nuxt 3 in a [namespaced package](https://www.npmjs.com/package/@davestewart/nuxt-scrollbar) rather hang around for one-day, some-day PRs.
-> 
-> Note that there is also a [Nuxt Perfect Scrollbar](https://www.npmjs.com/package/nuxt-perfect-scrollbar) package on NPM, but it's four years old, has no downloads and lacks source code ☠️. 
+It's a fairly simple plugin, but takes the hassle out of setting up server and client content, attaching event handlers, and importing styles. 
+
+### A note about wrapped / alternate packages
+
+Both [vue3-perfect-scrollbar](https://github.com/mercs600/vue3-perfect-scrollbar/issues) and [perfect-scrollbar](https://github.com/mdbootstrap/perfect-scrollbar/issues) seem to have gone a bit stale, so I figured it was easier to wrap the library for Nuxt 3 in a [namespaced package](https://www.npmjs.com/package/@davestewart/nuxt-scrollbar) rather hang around for one-day, some-day PRs.
+
+Note that there is also a [nuxt-perfect-scrollbar](https://www.npmjs.com/package/nuxt-perfect-scrollbar) package on NPM, but it's four years old, has no downloads and lacks source code ☠️. 
 
 ## Demo
 
@@ -42,7 +44,7 @@ Configuration:
 ```js
 export default defineNuxtConfig({
   modules: [
-    'nuxt-scrollbar'
+    '@davestewart/nuxt-scrollbar'
   ],
 })
 ```
@@ -51,7 +53,7 @@ export default defineNuxtConfig({
 
 ### Markup
 
-Basic example using scrollbar with custom settings:
+Basic example using scrollbar with optional attributes:
 
 ```vue
 <template>
@@ -69,8 +71,8 @@ function onScroll (event) {
 
 Note:
 
-- scrollbar styles are imported by default
-- you'll need to set the scrollbar height for it to scroll
+- you need to set the scrollbar height for it to scroll!
+- the scrollbar styles are imported automatically
 
 ### Options and events
 

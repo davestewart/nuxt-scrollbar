@@ -1,7 +1,7 @@
 {
   "name": "@davestewart/nuxt-scrollbar",
   "description": "Nuxt wrapper for Vue 3 Perfect Scrollbar",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "repository": "davestewart/nuxt-scrollbar",
   "license": "MIT",
   "type": "module",
